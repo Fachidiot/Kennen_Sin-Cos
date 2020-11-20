@@ -5,6 +5,8 @@ ScriptsOnlyBuild:
     - MenuScript
     - ShootingStar
     - particleAttractorLinear
+    - particleAttractorSpherical
+    - rotation
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -13,6 +15,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -20,7 +23,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.Outline
+    - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/MenuScene.unity:
@@ -32,7 +37,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -49,9 +60,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9868}
     - Class: 114
+      Script: {instanceID: 9958}
+    - Class: 114
+      Script: {instanceID: 10156}
+    - Class: 114
       Script: {instanceID: 10240}
     - Class: 114
+      Script: {instanceID: 10406}
+    - Class: 114
       Script: {instanceID: 10582}
+    - Class: 114
+      Script: {instanceID: 10746}
     - Class: 114
       Script: {instanceID: 10984}
     - Class: 114
@@ -67,6 +86,10 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -102,6 +125,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9868}
     - Class: 114
+      Script: {instanceID: 10240}
+    - Class: 114
       Script: {instanceID: 10566}
     - Class: 114
       Script: {instanceID: 10582}
@@ -109,6 +134,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10984}
     - Class: 114
       Script: {instanceID: 11026}
+    - Class: 114
+      Script: {instanceID: 11368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -116,8 +143,6 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
